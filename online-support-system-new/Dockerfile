@@ -10,7 +10,7 @@ COPY . .
 # Install dependencies
 RUN apt-get update && apt-get install -y git unzip
 
-# Install composer
+# Install composera
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Install PHP extensions if needed
